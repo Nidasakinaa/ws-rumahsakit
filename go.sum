@@ -11,8 +11,6 @@ github.com/aiteung/atapi v0.0.16 h1:I22MbtDnhRCTimD365Wu+h0rpOJb8zK4bBU6dDsMtYY=
 github.com/aiteung/atapi v0.0.16/go.mod h1:kGz2vwWxDL8wmXEdMIJDBOxYKcZ4b/QR8D0Hi49DQw4=
 github.com/aiteung/atdb v0.1.7 h1:EV7vk5ld8i1wlrzf9N3FGDcvYvQz0dCnb0m2WCbRFOk=
 github.com/aiteung/atdb v0.1.7/go.mod h1:pxLum1XaWHcrspqu3n8zHKix2h5czOIiwAgIMKl3cX0=
-github.com/aiteung/atmessage v0.0.1 h1:d46Zt2Y9GxEw9yoz9EHkxBWTwxCX7qq4wmvbC+p/HUM=
-github.com/aiteung/atmessage v0.0.1/go.mod h1:Jtm6W8M27R5Z7SgV7nOHWGv0AZ6JvwtCVBarlbcZvoo=
 github.com/aiteung/atmessage v0.0.27 h1:5/A62cFcNeMQpRwJcOcjTiuE7UhtflbnhZVVJd7tGWQ=
 github.com/aiteung/atmessage v0.0.27/go.mod h1:WYiESQIGixBs0ZSd5XSMxwDs7iLRCxJVezBsS39F1QI=
 github.com/aiteung/atmodel v0.0.4 h1:jz0/jPfVjiNxMGaP8Rfl+14cgJZ8uu1vg3a46L/nzBo=
@@ -124,7 +122,6 @@ github.com/valyala/tcplisten v1.0.0 h1:rBHj/Xf+E1tRGZyWIWwJDiRY0zc1Js+CV5DqwacVS
 github.com/valyala/tcplisten v1.0.0/go.mod h1:T0xQ8SeCZGxckz9qRXTfG43PvQ/mcWh7FwZEA7Ioqkc=
 github.com/whatsauth/watoken v0.1.2 h1:dGSEFjP2I+BRbLIq84mJ6Rwgx7B/OwBpKtZJr4dQSOs=
 github.com/whatsauth/watoken v0.1.2/go.mod h1:Go11cZ4yTib8jo0oERgy6ufeGiELU88GnX5Upx29ZEc=
-github.com/whatsauth/whatsauth v0.1.82/go.mod h1:ImMMSh+Rq49atqccMn6+xRnDu6OTztkGnW3RAesIOSE=
 github.com/whatsauth/whatsauth v0.2.9 h1:QQeEqCxzHeu+6x7PBlDyXnkechczNBHv2tv3kjddi2Y=
 github.com/whatsauth/whatsauth v0.2.9/go.mod h1:LO/tIB+hoMg5wHLiztvMqH0LI1D3GYZDeOfcuNIhtCY=
 github.com/xdg-go/pbkdf2 v1.0.0 h1:Su7DPu48wXMwC3bs7MCNG+z4FhcyEuz5dlvchbq0B0c=
