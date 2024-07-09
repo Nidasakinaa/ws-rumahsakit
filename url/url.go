@@ -1,7 +1,7 @@
 package url
 
 import (
-	"iteung/controller"
+	"github.com/Nidasakinaa/ws-rumahsakit/controller"
 
 	"github.com/gofiber/fiber/v2"
 )
