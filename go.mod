@@ -6,7 +6,7 @@ require (
 	github.com/aiteung/atdb v0.1.7
 	github.com/aiteung/musik v0.0.5
 	github.com/gofiber/fiber/v2 v2.52.5
-	github.com/whatsauth/whatsauth v0.1.82
+	github.com/whatsauth/whatsauth v0.2.9
 	go.mau.fi/whatsmeow v0.0.0-20240706081318-bd4d4e8f74f6
 )
 
@@ -14,7 +14,7 @@ require (
 	aidanwoods.dev/go-paseto v1.3.0 // indirect
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/aiteung/atapi v0.0.16 // indirect
-	github.com/aiteung/atmessage v0.0.1 // indirect
+	github.com/aiteung/atmessage v0.0.27 // indirect
 	github.com/aiteung/atmodel v0.0.4 // indirect
 	github.com/andybalholm/brotli v1.0.5 // indirect
 	github.com/fasthttp/websocket v1.5.3 // indirect
