@@ -18,4 +18,5 @@ func Web(page *fiber.App) {
 
 	page.Get("/checkip", controller.Homepage) //ujicoba panggil package musik
 	page.Get("/pasien", controller.GetPasien)
+	page.Get("/pasien/:id", controller.GetPasienID) //menampilkan data pasien berdasarkan id
 }
