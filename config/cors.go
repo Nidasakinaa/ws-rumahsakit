@@ -16,6 +16,7 @@ var origins = []string{
 	"https://dias.ulbi.ac.id",
 	"https://iteung.ulbi.ac.id",
 	"https://whatsauth.github.io",
+	"http://127.0.0.1:8080",
 	"https://Nidasakinaa.github.io",
 }
 
