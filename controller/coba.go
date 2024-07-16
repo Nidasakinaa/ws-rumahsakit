@@ -33,6 +33,18 @@ func GetPasien(c *fiber.Ctx) error {
 	return c.JSON(ps)
 }
 
+// GetPasienID godoc
+// @Summary Get By ID Data Pasien.
+// @Description Ambil per ID data pasien.
+// @Tags Pasien
+// @Accept json
+// @Produce json
+// @Param id path string true "Masukan ID"
+// @Success 200 {object} Biodata
+// @Failure 400
+// @Failure 404
+// @Failure 500
+// @Router /pasien/{id} [get]
 func GetPasienID(c *fiber.Ctx) error {
 	id := c.Params("id")
 	if id == "" {
@@ -64,6 +76,17 @@ func GetPasienID(c *fiber.Ctx) error {
 	return c.JSON(ps)
 }
 
+// InsertDataPasien godoc
+// @Summary Insert data pasien.
+// @Description Input data pasien.
+// @Tags Pasien
+// @Accept json
+// @Produce json
+// @Param request body ReqPasien true "Payload Body [RAW]"
+// @Success 200 {object} Biodata
+// @Failure 400
+// @Failure 500
+// @Router /insert [post]
 func InsertDataPasien(c *fiber.Ctx) error {
 	db := config.Ulbimongoconn
 	var pasien inimodel.Biodata
@@ -95,6 +118,18 @@ func InsertDataPasien(c *fiber.Ctx) error {
 	})
 }
 
+// UpdateData godoc
+// @Summary Update data pasien.
+// @Description Ubah data pasien.
+// @Tags Pasien
+// @Accept json
+// @Produce json
+// @Param id path string true "Masukan ID"
+// @Param request body ReqPasien true "Payload Body [RAW]"
+// @Success 200 {object} Biodata
+// @Failure 400
+// @Failure 500
+// @Router /update/{id} [put]
 func UpdateData(c *fiber.Ctx) error {
 	db := config.Ulbimongoconn
 	id := c.Params("id")
@@ -138,6 +173,17 @@ func UpdateData(c *fiber.Ctx) error {
 	})
 }
 
+// DeletePasienByID godoc
+// @Summary Delete data pasien.
+// @Description Hapus data pasien.
+// @Tags Pasien
+// @Accept json
+// @Produce json
+// @Param id path string true "Masukan ID"
+// @Success 200
+// @Failure 400
+// @Failure 500
+// @Router /delete/{id} [delete]
 func DeletePasienByID(c *fiber.Ctx) error {
 	id := c.Params("id")
 	if id == "" {

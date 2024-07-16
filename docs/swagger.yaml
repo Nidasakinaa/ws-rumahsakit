@@ -45,6 +45,25 @@ definitions:
       visitdate:
         type: string
     type: object
+  controller.ReqPasien:
+    properties:
+      alamat:
+        type: string
+      doctor:
+        $ref: '#/definitions/controller.Doctor'
+      gender:
+        type: string
+      medicalRecord:
+        $ref: '#/definitions/controller.MedicalRecord'
+      pasienName:
+        type: string
+      phonenumber:
+        type: string
+      status:
+        type: string
+      ttl:
+        type: string
+    type: object
 host: ws-rumahsakit-2e1eb71f14e2.herokuapp.com
 info:
   contact:
@@ -55,6 +74,55 @@ info:
   title: TES SWAGGER PASIEN
   version: "1.0"
 paths:
+  /delete/{id}:
+    delete:
+      consumes:
+      - application/json
+      description: Hapus data pasien.
+      parameters:
+      - description: Masukan ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error
+      summary: Delete data pasien.
+      tags:
+      - Pasien
+  /insert:
+    post:
+      consumes:
+      - application/json
+      description: Input data pasien.
+      parameters:
+      - description: Payload Body [RAW]
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/controller.ReqPasien'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Biodata'
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error
+      summary: Insert data pasien.
+      tags:
+      - Pasien
   /pasien:
     get:
       consumes:
@@ -68,6 +136,64 @@ paths:
           schema:
             $ref: '#/definitions/controller.Biodata'
       summary: Get All Data Pasien.
+      tags:
+      - Pasien
+  /pasien/{id}:
+    get:
+      consumes:
+      - application/json
+      description: Ambil per ID data pasien.
+      parameters:
+      - description: Masukan ID
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Biodata'
+        "400":
+          description: Bad Request
+        "404":
+          description: Not Found
+        "500":
+          description: Internal Server Error
+      summary: Get By ID Data Pasien.
+      tags:
+      - Pasien
+  /update/{id}:
+    put:
+      consumes:
+      - application/json
+      description: Ubah data pasien.
+      parameters:
+      - description: Masukan ID
+        in: path
+        name: id
+        required: true
+        type: string
+      - description: Payload Body [RAW]
+        in: body
+        name: request
+        required: true
+        schema:
+          $ref: '#/definitions/controller.ReqPasien'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Biodata'
+        "400":
+          description: Bad Request
+        "500":
+          description: Internal Server Error
+      summary: Update data pasien.
       tags:
       - Pasien
 schemes:
