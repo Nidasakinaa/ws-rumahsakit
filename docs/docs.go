@@ -280,25 +280,30 @@ const docTemplate = `{
             "type": "object",
             "properties": {
                 "alamat": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Sariasih 25, Bandung"
                 },
                 "doctor": {
                     "$ref": "#/definitions/controller.Doctor"
                 },
                 "gender": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Perempuan"
                 },
                 "medicalRecord": {
                     "$ref": "#/definitions/controller.MedicalRecord"
                 },
                 "pasienName": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Doni"
                 },
                 "phonenumber": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "08567432"
                 },
                 "status": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "single"
                 },
                 "ttl": {
                     "type": "string"
