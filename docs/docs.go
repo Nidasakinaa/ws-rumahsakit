@@ -283,15 +283,15 @@ const docTemplate = `{
                     "type": "string",
                     "example": "Sariasih 25, Bandung"
                 },
+                "diagnosis": {
+                    "type": "string"
+                },
                 "doctor": {
-                    "$ref": "#/definitions/controller.Doctor"
+                    "type": "string"
                 },
                 "gender": {
                     "type": "string",
                     "example": "Perempuan"
-                },
-                "medicalRecord": {
-                    "$ref": "#/definitions/controller.MedicalRecord"
                 },
                 "pasienName": {
                     "type": "string",

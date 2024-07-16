@@ -32,12 +32,12 @@ type Biodata struct {
 }
 
 type ReqPasien struct {
-	PasienName    string        `bson:"pasienName,omitempty" json:"pasienName,omitempty" example:"Doni"`
-	Gender        string        `bson:"gender,omitempty" json:"gender,omitempty" example:"Perempuan"`
-	TTL           string        `bson:"ttl,omitempty" json:"ttl,omitempty" `
-	Status        string        `bson:"status,omitempty" json:"status,omitempty" example:"single"`
-	Phone_number  string        `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
-	Alamat        string        `bson:"alamat,omitempty" json:"alamat,omitempty" example:"Sariasih 25, Bandung"`
-	Doctor        Doctor        `bson:"doctor,omitempty" json:"doctor,omitempty"`
-	MedicalRecord MedicalRecord `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty"`
+	PasienName   string `bson:"pasienName,omitempty" json:"pasienName,omitempty" example:"Doni"`
+	Gender       string `bson:"gender,omitempty" json:"gender,omitempty" example:"Perempuan"`
+	TTL          string `bson:"ttl,omitempty" json:"ttl,omitempty" `
+	Status       string `bson:"status,omitempty" json:"status,omitempty" example:"single"`
+	Phone_number string `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
+	Alamat       string `bson:"alamat,omitempty" json:"alamat,omitempty" example:"Sariasih 25, Bandung"`
+	DoctorName   string `bson:"doctor,omitempty" json:"doctor,omitempty"`
+	Diagnosis    string `bson:"diagnosis,omitempty" json:"diagnosis,omitempty"`
 }

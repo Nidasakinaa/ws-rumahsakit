@@ -50,13 +50,13 @@ definitions:
       alamat:
         example: Sariasih 25, Bandung
         type: string
+      diagnosis:
+        type: string
       doctor:
-        $ref: '#/definitions/controller.Doctor'
+        type: string
       gender:
         example: Perempuan
         type: string
-      medicalRecord:
-        $ref: '#/definitions/controller.MedicalRecord'
       pasienName:
         example: Doni
         type: string
