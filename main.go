@@ -10,7 +10,7 @@ import (
 
 	"github.com/Nidasakinaa/ws-rumahsakit/url"
 
-	"github.com/Nidasakinaa/ws-rumahsakit/docs"
+	_ "github.com/Nidasakinaa/ws-rumahsakit/docs"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -22,7 +22,7 @@ import (
 // @contact.url https://github.com/Nidasakinaa
 // @contact.email 714220040@std.ulbi.ac.id
 
-// @host ws-rumahsakit-2e1eb71f14e2.herokuapp.com/
+// @host ws-rumahsakit-2e1eb71f14e2.herokuapp.com
 // @BasePath /
 // @schemes https http
 func main() {

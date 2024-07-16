@@ -14,7 +14,7 @@
         },
         "version": "1.0"
     },
-    "host": "ws-rumahsakit-2e1eb71f14e2.herokuapp.com/",
+    "host": "ws-rumahsakit-2e1eb71f14e2.herokuapp.com",
     "basePath": "/",
     "paths": {
         "/pasien": {
