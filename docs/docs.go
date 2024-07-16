@@ -277,7 +277,38 @@ const docTemplate = `{
             }
         },
         "controller.ReqPasien": {
-            "type": "object"
+            "type": "object",
+            "properties": {
+                "alamat": {
+                    "type": "string",
+                    "example": "Sariasih 25, Bandung"
+                },
+                "doctor": {
+                    "$ref": "#/definitions/controller.Doctor"
+                },
+                "gender": {
+                    "type": "string",
+                    "example": "Perempuan"
+                },
+                "medicalRecord": {
+                    "$ref": "#/definitions/controller.MedicalRecord"
+                },
+                "pasienName": {
+                    "type": "string",
+                    "example": "Doni"
+                },
+                "phonenumber": {
+                    "type": "string",
+                    "example": "08567432"
+                },
+                "status": {
+                    "type": "string",
+                    "example": "single"
+                },
+                "ttl": {
+                    "type": "string"
+                }
+            }
         }
     }
 }`

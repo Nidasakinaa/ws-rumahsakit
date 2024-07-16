@@ -46,6 +46,28 @@ definitions:
         type: string
     type: object
   controller.ReqPasien:
+    properties:
+      alamat:
+        example: Sariasih 25, Bandung
+        type: string
+      doctor:
+        $ref: '#/definitions/controller.Doctor'
+      gender:
+        example: Perempuan
+        type: string
+      medicalRecord:
+        $ref: '#/definitions/controller.MedicalRecord'
+      pasienName:
+        example: Doni
+        type: string
+      phonenumber:
+        example: "08567432"
+        type: string
+      status:
+        example: single
+        type: string
+      ttl:
+        type: string
     type: object
 host: ws-rumahsakit-2e1eb71f14e2.herokuapp.com
 info:

@@ -38,6 +38,6 @@ type ReqPasien struct {
 	Status        string        `bson:"status,omitempty" json:"status,omitempty" example:"single"`
 	Phone_number  string        `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
 	Alamat        string        `bson:"alamat,omitempty" json:"alamat,omitempty" example:"Sariasih 25, Bandung"`
-	Doctor        Doctor        `bson:"doctor,omitempty" json:"doctor,omitempty" example:"Sarah"`
-	MedicalRecord MedicalRecord `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty" example:"Stroke"`
+	Doctor        Doctor        `bson:"doctor,omitempty" json:"doctor,omitempty"`
+	MedicalRecord MedicalRecord `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty"`
 }
