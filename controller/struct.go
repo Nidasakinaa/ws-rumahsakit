@@ -11,12 +11,11 @@ type Doctor struct {
 }
 
 type MedicalRecord struct {
-	ID         primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
-	VisitDate  string             `bson:"visitdate,omitempty" json:"visitdate,omitempty"`
-	DoctorName string             `bson:"doctor,omitempty" json:"doctor,omitempty"`
-	Diagnosis  string             `bson:"diagnosis,omitempty" json:"diagnosis,omitempty"`
-	Treatment  string             `bson:"treatment,omitempty" json:"treatment,omitempty"`
-	Notes      string             `bson:"notes,omitempty" json:"notes,omitempty"`
+	ID        primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	VisitDate string             `bson:"visitdate,omitempty" json:"visitdate,omitempty"`
+	Diagnosis string             `bson:"diagnosis,omitempty" json:"diagnosis,omitempty"`
+	Treatment string             `bson:"treatment,omitempty" json:"treatment,omitempty"`
+	Notes     string             `bson:"notes,omitempty" json:"notes,omitempty"`
 }
 
 type Biodata struct {
