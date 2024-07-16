@@ -277,40 +277,7 @@ const docTemplate = `{
             }
         },
         "controller.ReqPasien": {
-            "type": "object",
-            "properties": {
-                "alamat": {
-                    "type": "string",
-                    "example": "Sariasih 25, Bandung"
-                },
-                "diagnosis": {
-                    "type": "string",
-                    "example": "Stroke"
-                },
-                "doctor": {
-                    "type": "string",
-                    "example": "Ardi"
-                },
-                "gender": {
-                    "type": "string",
-                    "example": "Perempuan"
-                },
-                "pasienName": {
-                    "type": "string",
-                    "example": "Doni"
-                },
-                "phonenumber": {
-                    "type": "string",
-                    "example": "08567432"
-                },
-                "status": {
-                    "type": "string",
-                    "example": "single"
-                },
-                "ttl": {
-                    "type": "string"
-                }
-            }
+            "type": "object"
         }
     }
 }`
