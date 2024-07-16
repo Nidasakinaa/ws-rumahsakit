@@ -284,10 +284,12 @@ const docTemplate = `{
                     "example": "Sariasih 25, Bandung"
                 },
                 "diagnosis": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Stroke"
                 },
                 "doctor": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "Ardi"
                 },
                 "gender": {
                     "type": "string",

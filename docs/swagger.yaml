@@ -51,8 +51,10 @@ definitions:
         example: Sariasih 25, Bandung
         type: string
       diagnosis:
+        example: Stroke
         type: string
       doctor:
+        example: Ardi
         type: string
       gender:
         example: Perempuan
