@@ -1,3 +1,4 @@
+basePath: /
 definitions:
   controller.Biodata:
     properties:
@@ -44,8 +45,15 @@ definitions:
       visitdate:
         type: string
     type: object
+host: ws-rumahsakit-2e1eb71f14e2.herokuapp.com/
 info:
-  contact: {}
+  contact:
+    email: 714220040@std.ulbi.ac.id
+    name: API Support
+    url: https://github.com/Nidasakinaa
+  description: This is a sample swagger for Fiber
+  title: TES SWAGGER PASIEN
+  version: "1.0"
 paths:
   /pasien:
     get:
@@ -62,4 +70,7 @@ paths:
       summary: Get All Data Pasien.
       tags:
       - Pasien
+schemes:
+- https
+- http
 swagger: "2.0"

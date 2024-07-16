@@ -9,7 +9,11 @@ const docTemplate = `{
     "info": {
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
-        "contact": {},
+        "contact": {
+            "name": "API Support",
+            "url": "https://github.com/Nidasakinaa",
+            "email": "714220040@std.ulbi.ac.id"
+        },
         "version": "{{.Version}}"
     },
     "host": "{{.Host}}",
@@ -114,12 +118,12 @@ const docTemplate = `{
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it
 var SwaggerInfo = &swag.Spec{
-	Version:          "",
-	Host:             "",
-	BasePath:         "",
-	Schemes:          []string{},
-	Title:            "",
-	Description:      "",
+	Version:          "1.0",
+	Host:             "ws-rumahsakit-2e1eb71f14e2.herokuapp.com/",
+	BasePath:         "/",
+	Schemes:          []string{"https", "http"},
+	Title:            "TES SWAGGER PASIEN",
+	Description:      "This is a sample swagger for Fiber",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

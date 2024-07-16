@@ -1,8 +1,21 @@
 {
+    "schemes": [
+        "https",
+        "http"
+    ],
     "swagger": "2.0",
     "info": {
-        "contact": {}
+        "description": "This is a sample swagger for Fiber",
+        "title": "TES SWAGGER PASIEN",
+        "contact": {
+            "name": "API Support",
+            "url": "https://github.com/Nidasakinaa",
+            "email": "714220040@std.ulbi.ac.id"
+        },
+        "version": "1.0"
     },
+    "host": "ws-rumahsakit-2e1eb71f14e2.herokuapp.com/",
+    "basePath": "/",
     "paths": {
         "/pasien": {
             "get": {
