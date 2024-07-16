@@ -16,8 +16,6 @@ definitions:
         type: string
       phonenumber:
         type: string
-      status:
-        type: string
       ttl:
         type: string
     type: object
@@ -35,10 +33,6 @@ definitions:
       _id:
         type: string
       diagnosis:
-        type: string
-      doctor:
-        type: string
-      notes:
         type: string
       treatment:
         type: string
@@ -62,9 +56,6 @@ definitions:
         type: string
       phonenumber:
         example: "08567432"
-        type: string
-      status:
-        example: single
         type: string
       ttl:
         type: string

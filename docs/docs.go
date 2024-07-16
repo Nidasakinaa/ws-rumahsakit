@@ -231,9 +231,6 @@ const docTemplate = `{
                 "phonenumber": {
                     "type": "string"
                 },
-                "status": {
-                    "type": "string"
-                },
                 "ttl": {
                     "type": "string"
                 }
@@ -260,12 +257,6 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "diagnosis": {
-                    "type": "string"
-                },
-                "doctor": {
-                    "type": "string"
-                },
-                "notes": {
                     "type": "string"
                 },
                 "treatment": {
@@ -300,10 +291,6 @@ const docTemplate = `{
                 "phonenumber": {
                     "type": "string",
                     "example": "08567432"
-                },
-                "status": {
-                    "type": "string",
-                    "example": "single"
                 },
                 "ttl": {
                     "type": "string"
