@@ -1,0 +1,65 @@
+definitions:
+  controller.Biodata:
+    properties:
+      _id:
+        type: string
+      alamat:
+        type: string
+      doctor:
+        $ref: '#/definitions/controller.Doctor'
+      gender:
+        type: string
+      medicalRecord:
+        $ref: '#/definitions/controller.MedicalRecord'
+      pasienName:
+        type: string
+      phonenumber:
+        type: string
+      status:
+        type: string
+      ttl:
+        type: string
+    type: object
+  controller.Doctor:
+    properties:
+      contact:
+        type: string
+      name:
+        type: string
+      specialty:
+        type: string
+    type: object
+  controller.MedicalRecord:
+    properties:
+      _id:
+        type: string
+      diagnosis:
+        type: string
+      doctor:
+        type: string
+      notes:
+        type: string
+      treatment:
+        type: string
+      visitdate:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /pasien:
+    get:
+      consumes:
+      - application/json
+      description: Mengambil semua data pasien.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Biodata'
+      summary: Get All Data Pasien.
+      tags:
+      - Pasien
+swagger: "2.0"

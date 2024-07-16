@@ -3,6 +3,7 @@ package url
 import (
 	"github.com/Nidasakinaa/ws-rumahsakit/controller"
 	"github.com/gofiber/fiber/v2"
+	"github.com/gofiber/swagger"
 )
 
 func Web(page *fiber.App) {
@@ -22,4 +23,6 @@ func Web(page *fiber.App) {
 	page.Post("/insert", controller.InsertDataPasien)
 	page.Put("/update/:id", controller.UpdateData)
 	page.Delete("/delete/:id", controller.DeletePasienByID)
+
+	page.Get("/docs/*", swagger.HandlerDefault)
 }

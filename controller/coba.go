@@ -20,6 +20,14 @@ func Homepage(c *fiber.Ctx) error {
 	return c.JSON(ipaddr)
 }
 
+// GetPasien godoc
+// @Summary Get All Data Pasien.
+// @Description Mengambil semua data pasien.
+// @Tags Pasien
+// @Accept json
+// @Produce json
+// @Success 200 {object} Biodata
+// @Router /pasien [get]
 func GetPasien(c *fiber.Ctx) error {
 	ps := cek.GetAllPasien(config.Ulbimongoconn, "DataPasien")
 	return c.JSON(ps)

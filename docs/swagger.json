@@ -1,0 +1,102 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {}
+    },
+    "paths": {
+        "/pasien": {
+            "get": {
+                "description": "Mengambil semua data pasien.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Pasien"
+                ],
+                "summary": "Get All Data Pasien.",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/controller.Biodata"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "controller.Biodata": {
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "alamat": {
+                    "type": "string"
+                },
+                "doctor": {
+                    "$ref": "#/definitions/controller.Doctor"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "medicalRecord": {
+                    "$ref": "#/definitions/controller.MedicalRecord"
+                },
+                "pasienName": {
+                    "type": "string"
+                },
+                "phonenumber": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "ttl": {
+                    "type": "string"
+                }
+            }
+        },
+        "controller.Doctor": {
+            "type": "object",
+            "properties": {
+                "contact": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "specialty": {
+                    "type": "string"
+                }
+            }
+        },
+        "controller.MedicalRecord": {
+            "type": "object",
+            "properties": {
+                "_id": {
+                    "type": "string"
+                },
+                "diagnosis": {
+                    "type": "string"
+                },
+                "doctor": {
+                    "type": "string"
+                },
+                "notes": {
+                    "type": "string"
+                },
+                "treatment": {
+                    "type": "string"
+                },
+                "visitdate": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
