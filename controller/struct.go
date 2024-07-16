@@ -39,5 +39,5 @@ type ReqPasien struct {
 	Phone_number string        `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
 	Alamat       string        `bson:"alamat,omitempty" json:"alamat,omitempty" example:"Sariasih 25, Bandung"`
 	DoctorName   Doctor        `bson:"doctor,omitempty" json:"doctor,omitempty" example:"Ardi"`
-	Diagnosis    MedicalRecord `bson:"diagnosis,omitempty" json:"diagnosis,omitempty" example:"Stroke"`
+	Diagnosis    MedicalRecord `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty" example:"Stroke"`
 }
