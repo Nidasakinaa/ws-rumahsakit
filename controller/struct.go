@@ -22,7 +22,7 @@ type Biodata struct {
 	PasienName    string             `bson:"pasienName,omitempty" json:"pasienName,omitempty"`
 	Gender        string             `bson:"gender,omitempty" json:"gender,omitempty"`
 	Usia          string             `bson:"usia,omitempty" json:"usia,omitempty"`
-	Phone_number  string             `bson:"phonenumber,omitempty" json:"phonenumber,omitempty"`
+	Phonenumber   string             `bson:"phonenumber,omitempty" json:"phonenumber,omitempty"`
 	Alamat        string             `bson:"alamat,omitempty" json:"alamat,omitempty"`
 	Doctor        Doctor             `bson:"doctor,omitempty" json:"doctor,omitempty"`
 	MedicalRecord MedicalRecord      `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty"`
@@ -32,7 +32,7 @@ type ReqPasien struct {
 	PasienName    string        `bson:"pasienName,omitempty" json:"pasienName,omitempty" example:"Doni"`
 	Gender        string        `bson:"gender,omitempty" json:"gender,omitempty" example:"Laki-laki"`
 	Usia          string        `bson:"usia,omitempty" json:"usia,omitempty" example:"20 Tahun" `
-	Phone_number  string        `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
+	Phonenumber   string        `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
 	Alamat        string        `bson:"alamat,omitempty" json:"alamat,omitempty" example:"Sariasih 25, Bandung"`
 	Doctor        Doctor        `bson:"doctor,omitempty" json:"doctor,omitempty"`
 	MedicalRecord MedicalRecord `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty"`

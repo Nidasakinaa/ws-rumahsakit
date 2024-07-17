@@ -100,7 +100,7 @@ func InsertDataPasien(c *fiber.Ctx) error {
 		pasien.PasienName,
 		pasien.Gender,
 		pasien.Usia,
-		pasien.Phone_number,
+		pasien.Phonenumber,
 		pasien.Alamat,
 		pasien.Doctor,
 		pasien.MedicalRecord)
@@ -154,7 +154,7 @@ func UpdateData(c *fiber.Ctx) error {
 		pasien.PasienName,
 		pasien.Gender,
 		pasien.Usia,
-		pasien.Phone_number,
+		pasien.Phonenumber,
 		pasien.Alamat,
 		pasien.Doctor,
 		pasien.MedicalRecord)
