@@ -231,7 +231,7 @@ const docTemplate = `{
                 "phonenumber": {
                     "type": "string"
                 },
-                "ttl": {
+                "usia": {
                     "type": "string"
                 }
             }
@@ -279,7 +279,7 @@ const docTemplate = `{
                 },
                 "gender": {
                     "type": "string",
-                    "example": "Perempuan"
+                    "example": "Laki-laki"
                 },
                 "medicalRecord": {
                     "$ref": "#/definitions/controller.MedicalRecord"
@@ -292,8 +292,9 @@ const docTemplate = `{
                     "type": "string",
                     "example": "08567432"
                 },
-                "ttl": {
-                    "type": "string"
+                "usia": {
+                    "type": "string",
+                    "example": "20 Tahun"
                 }
             }
         }

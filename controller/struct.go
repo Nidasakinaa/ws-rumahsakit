@@ -21,7 +21,7 @@ type Biodata struct {
 	ID            primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
 	PasienName    string             `bson:"pasienName,omitempty" json:"pasienName,omitempty"`
 	Gender        string             `bson:"gender,omitempty" json:"gender,omitempty"`
-	TTL           string             `bson:"ttl,omitempty" json:"ttl,omitempty"`
+	Usia          string             `bson:"usia,omitempty" json:"usia,omitempty"`
 	Phone_number  string             `bson:"phonenumber,omitempty" json:"phonenumber,omitempty"`
 	Alamat        string             `bson:"alamat,omitempty" json:"alamat,omitempty"`
 	Doctor        Doctor             `bson:"doctor,omitempty" json:"doctor,omitempty"`
@@ -30,8 +30,8 @@ type Biodata struct {
 
 type ReqPasien struct {
 	PasienName    string        `bson:"pasienName,omitempty" json:"pasienName,omitempty" example:"Doni"`
-	Gender        string        `bson:"gender,omitempty" json:"gender,omitempty" example:"Perempuan"`
-	TTL           string        `bson:"ttl,omitempty" json:"ttl,omitempty" `
+	Gender        string        `bson:"gender,omitempty" json:"gender,omitempty" example:"Laki-laki"`
+	Usia          string        `bson:"usia,omitempty" json:"usia,omitempty" example:"20 Tahun" `
 	Phone_number  string        `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
 	Alamat        string        `bson:"alamat,omitempty" json:"alamat,omitempty" example:"Sariasih 25, Bandung"`
 	Doctor        Doctor        `bson:"doctor,omitempty" json:"doctor,omitempty"`

@@ -16,7 +16,7 @@ definitions:
         type: string
       phonenumber:
         type: string
-      ttl:
+      usia:
         type: string
     type: object
   controller.Doctor:
@@ -47,7 +47,7 @@ definitions:
       doctor:
         $ref: '#/definitions/controller.Doctor'
       gender:
-        example: Perempuan
+        example: Laki-laki
         type: string
       medicalRecord:
         $ref: '#/definitions/controller.MedicalRecord'
@@ -57,7 +57,8 @@ definitions:
       phonenumber:
         example: "08567432"
         type: string
-      ttl:
+      usia:
+        example: 20 Tahun
         type: string
     type: object
 host: ws-rumahsakit-2e1eb71f14e2.herokuapp.com
