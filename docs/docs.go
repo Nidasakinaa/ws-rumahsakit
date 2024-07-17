@@ -253,10 +253,10 @@ const docTemplate = `{
         "controller.MedicalRecord": {
             "type": "object",
             "properties": {
-                "_id": {
+                "diagnosis": {
                     "type": "string"
                 },
-                "diagnosis": {
+                "m_id": {
                     "type": "string"
                 },
                 "treatment": {

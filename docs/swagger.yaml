@@ -30,9 +30,9 @@ definitions:
     type: object
   controller.MedicalRecord:
     properties:
-      _id:
-        type: string
       diagnosis:
+        type: string
+      m_id:
         type: string
       treatment:
         type: string
