@@ -39,18 +39,42 @@ definitions:
       visitdate:
         type: string
     type: object
+  controller.ReqDoctor:
+    properties:
+      contact:
+        example: "022987"
+        type: string
+      name:
+        example: Sari
+        type: string
+      specialty:
+        example: Oncology
+        type: string
+    type: object
+  controller.ReqMedicalRecord:
+    properties:
+      diagnosis:
+        example: Flu
+        type: string
+      treatment:
+        example: istirahat dan banyak mengonsumsi air putih
+        type: string
+      visitdate:
+        example: 12 Juni 2026
+        type: string
+    type: object
   controller.ReqPasien:
     properties:
       alamat:
         example: Sariasih 25, Bandung
         type: string
       doctor:
-        $ref: '#/definitions/controller.Doctor'
+        $ref: '#/definitions/controller.ReqDoctor'
       gender:
         example: Laki-laki
         type: string
       medicalRecord:
-        $ref: '#/definitions/controller.MedicalRecord'
+        $ref: '#/definitions/controller.ReqMedicalRecord'
       pasienName:
         example: Doni
         type: string

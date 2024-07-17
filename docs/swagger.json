@@ -265,6 +265,40 @@
                 }
             }
         },
+        "controller.ReqDoctor": {
+            "type": "object",
+            "properties": {
+                "contact": {
+                    "type": "string",
+                    "example": "022987"
+                },
+                "name": {
+                    "type": "string",
+                    "example": "Sari"
+                },
+                "specialty": {
+                    "type": "string",
+                    "example": "Oncology"
+                }
+            }
+        },
+        "controller.ReqMedicalRecord": {
+            "type": "object",
+            "properties": {
+                "diagnosis": {
+                    "type": "string",
+                    "example": "Flu"
+                },
+                "treatment": {
+                    "type": "string",
+                    "example": "istirahat dan banyak mengonsumsi air putih"
+                },
+                "visitdate": {
+                    "type": "string",
+                    "example": "12 Juni 2026"
+                }
+            }
+        },
         "controller.ReqPasien": {
             "type": "object",
             "properties": {
@@ -273,14 +307,14 @@
                     "example": "Sariasih 25, Bandung"
                 },
                 "doctor": {
-                    "$ref": "#/definitions/controller.Doctor"
+                    "$ref": "#/definitions/controller.ReqDoctor"
                 },
                 "gender": {
                     "type": "string",
                     "example": "Laki-laki"
                 },
                 "medicalRecord": {
-                    "$ref": "#/definitions/controller.MedicalRecord"
+                    "$ref": "#/definitions/controller.ReqMedicalRecord"
                 },
                 "pasienName": {
                     "type": "string",

@@ -29,11 +29,23 @@ type Biodata struct {
 }
 
 type ReqPasien struct {
-	PasienName    string        `bson:"pasienName,omitempty" json:"pasienName,omitempty" example:"Doni"`
-	Gender        string        `bson:"gender,omitempty" json:"gender,omitempty" example:"Laki-laki"`
-	Usia          string        `bson:"usia,omitempty" json:"usia,omitempty" example:"20 Tahun" `
-	Phonenumber   string        `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
-	Alamat        string        `bson:"alamat,omitempty" json:"alamat,omitempty" example:"Sariasih 25, Bandung"`
-	Doctor        Doctor        `bson:"doctor,omitempty" json:"doctor,omitempty"`
-	MedicalRecord MedicalRecord `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty"`
+	PasienName    string           `bson:"pasienName,omitempty" json:"pasienName,omitempty" example:"Doni"`
+	Gender        string           `bson:"gender,omitempty" json:"gender,omitempty" example:"Laki-laki"`
+	Usia          string           `bson:"usia,omitempty" json:"usia,omitempty" example:"20 Tahun" `
+	Phonenumber   string           `bson:"phonenumber,omitempty" json:"phonenumber,omitempty" example:"08567432"`
+	Alamat        string           `bson:"alamat,omitempty" json:"alamat,omitempty" example:"Sariasih 25, Bandung"`
+	Doctor        ReqDoctor        `bson:"doctor,omitempty" json:"doctor,omitempty"`
+	MedicalRecord ReqMedicalRecord `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty"`
+}
+
+type ReqDoctor struct {
+	Name      string `bson:"name,omitempty" json:"name,omitempty" example:"Sari"`
+	Specialty string `bson:"specialty,omitempty" json:"specialty,omitempty" example:"Oncology"`
+	Contact   string `bson:"contact,omitempty" json:"contact,omitempty" example:"022987"`
+}
+
+type ReqMedicalRecord struct {
+	VisitDate string `bson:"visitdate,omitempty" json:"visitdate,omitempty" example:"12 Juni 2026"`
+	Diagnosis string `bson:"diagnosis,omitempty" json:"diagnosis,omitempty" example:"Flu"`
+	Treatment string `bson:"treatment,omitempty" json:"treatment,omitempty" example:"istirahat dan banyak mengonsumsi air putih"`
 }
