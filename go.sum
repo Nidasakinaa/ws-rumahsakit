@@ -9,8 +9,6 @@ github.com/Azure/azure-sdk-for-go/sdk/internal v1.0.0/go.mod h1:eWRD7oawr1Mu1sLC
 github.com/AzureAD/microsoft-authentication-library-for-go v0.8.1/go.mod h1:4qFor3D/HDsvBME35Xy9rwW9DecL+M2sNw1ybjPtwA0=
 github.com/KyleBanks/depth v1.2.1 h1:5h8fQADFrWtarTdtDudMmGsC7GPbOAu6RVB3ffsVFHc=
 github.com/KyleBanks/depth v1.2.1/go.mod h1:jzSb9d0L43HxTQfT+oSA1EEp2q+ne2uh6XgeJcm8brE=
-github.com/Nidasakinaa/BeRS v0.0.5 h1:z+bhuDnZLtAHwDzMR6ChYYtz6xIgbQ3QxS8+PPa+Tqc=
-github.com/Nidasakinaa/BeRS v0.0.5/go.mod h1:AtEvrga5hckbZvqFKZhn+TcWPnlPXPBCm2VzjlmA4pE=
 github.com/Nidasakinaa/BeRS v0.0.6 h1:yhZG/FxPYgAf2cpTn5oI9UIQf9d7+Y80FEZLj4zZKOc=
 github.com/Nidasakinaa/BeRS v0.0.6/go.mod h1:AtEvrga5hckbZvqFKZhn+TcWPnlPXPBCm2VzjlmA4pE=
 github.com/PuerkitoBio/purell v1.1.1 h1:WEQqlqaGbrPkxLJWfBwQmfEAE1Z7ONdDLqrN38tNFfI=
