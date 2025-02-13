@@ -28,6 +28,14 @@ type Biodata struct {
 	MedicalRecord MedicalRecord      `bson:"medicalRecord,omitempty" json:"medicalRecord,omitempty"`
 }
 
+type User struct {
+    ID       primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+    FullName string             `bson:"name,omitempty" json:"name,omitempty"`
+    Phone    string             `bson:"phone,omitempty" json:"phone,omitempty"`
+    Username string             `bson:"username,omitempty" json:"username,omitempty"`
+    Password string             `bson:"password,omitempty" json:"password,omitempty"`
+}
+
 type ReqPasien struct {
 	PasienName    string           `bson:"pasienName,omitempty" json:"pasienName,omitempty" example:"Doni"`
 	Gender        string           `bson:"gender,omitempty" json:"gender,omitempty" example:"Laki-laki"`
@@ -48,4 +56,11 @@ type ReqMedicalRecord struct {
 	VisitDate string `bson:"visitdate,omitempty" json:"visitdate,omitempty" example:"12 Juni 2026"`
 	Diagnosis string `bson:"diagnosis,omitempty" json:"diagnosis,omitempty" example:"Flu"`
 	Treatment string `bson:"treatment,omitempty" json:"treatment,omitempty" example:"istirahat dan banyak mengonsumsi air putih"`
+}
+
+type ReqUser struct {
+    FullName string             `bson:"name,omitempty" json:"name,omitempty"`
+    Phone    string             `bson:"phone,omitempty" json:"phone,omitempty"`
+    Username string             `bson:"username,omitempty" json:"username,omitempty"`
+    Password string             `bson:"password,omitempty" json:"password,omitempty"`
 }
