@@ -30,6 +30,7 @@ func Web(page *fiber.App) {
 	page.Post("/insertUser", controller.InsertDataUser)
 	page.Put("/user/updateUser/:id", controller.UpdateDataUser)
 	page.Delete("/user/deleteUser/:id", controller.DeleteUserByID)
+	page.Post("/registeruser", handler.Register)
 	page.Post("/login", handler.Login)
 
 	page.Get("/docs/*", swagger.HandlerDefault)
